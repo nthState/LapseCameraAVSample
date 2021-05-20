@@ -43,6 +43,14 @@ class CameraEffectAnimator {
 
 extension CameraEffectAnimator {
   
+  public func resetTime() {
+    start = Date()
+  }
+  
+}
+
+extension CameraEffectAnimator {
+  
   private func getBlur(interval: TimeInterval) -> Float {
     
     let twentyPercent = (totalDuration * blurRelativeStartOffsetPercentage)

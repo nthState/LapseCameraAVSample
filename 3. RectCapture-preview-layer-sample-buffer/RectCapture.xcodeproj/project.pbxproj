@@ -55,7 +55,9 @@
 				B5264E6E1F02D970009C630F /* Products */,
 				675E515A2652B99A007B051E /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		B5264E6E1F02D970009C630F /* Products */ = {
 			isa = PBXGroup;
