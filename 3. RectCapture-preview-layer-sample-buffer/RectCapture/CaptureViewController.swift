@@ -117,14 +117,20 @@ class CaptureViewController: UIViewController {
       let cameraInput = try AVCaptureDeviceInput(device: camera)
       captureSession.addInput(cameraInput)
       
-      captureSession.sessionPreset = .high
-
       let preview = SampleBufferDisplayLayerView()
       preview.frame = view.bounds
-      preview.backgroundColor = UIColor.black
-      //preview.videoGravity = .resizeAspect
+      preview.backgroundColor = UIColor.green
       view.layer.addSublayer(preview.layer)
       self.previewLayer = preview
+      
+//      if let videoLayer = self.previewLayer?.layer as? AVSampleBufferDisplayLayer {
+//        videoLayer.videoGravity = .resizeAspectFill
+//        videoLayer.frame = self.view.bounds
+//      }
+//
+//      if let conn = captureSession.connections.first {
+//        conn.videoOrientation = .portrait
+//        }
       
       let output = AVCaptureVideoDataOutput()
       output.alwaysDiscardsLateVideoFrames = true
@@ -134,6 +140,10 @@ class CaptureViewController: UIViewController {
       
       captureSession.addOutput(output)
       
+      if let conn = output.connection(with: .video) {
+        conn.videoOrientation = .portrait
+      }
+
       captureSession.startRunning()
       
       addTestButtons()
@@ -149,6 +159,8 @@ extension CaptureViewController : AVCaptureVideoDataOutputSampleBufferDelegate {
   
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
     
+    //connection.videoOrientation = AVCaptureVideoOrientation.portrait
+    
     guard !takePhoto else {
       applyDistortion()
       return
@@ -158,6 +170,9 @@ extension CaptureViewController : AVCaptureVideoDataOutputSampleBufferDelegate {
           let formatDescription = CMSampleBufferGetFormatDescription(sampleBuffer) else {
       return
     }
+    
+    //let w = CVPixelBufferGetWidth(videoPixelBuffer)
+    //let h = CVPixelBufferGetHeight(videoPixelBuffer)
     
     lastPixelBuffer = videoPixelBuffer
     

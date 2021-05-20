@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67417B24265697F8002BAD5F /* LapseCameraEffectPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 67417B23265697F8002BAD5F /* LapseCameraEffectPackage */; };
 		675E51592652B791007B051E /* CameraEffectAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E51582652B791007B051E /* CameraEffectAnimator.swift */; };
 		675E51642652BF82007B051E /* SampleBufferDisplayview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E51632652BF82007B051E /* SampleBufferDisplayview.swift */; };
-		675E51672652C280007B051E /* LapseCameraEffectPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 675E51662652C280007B051E /* LapseCameraEffectPackage */; };
 		B5264E711F02D970009C630F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5264E701F02D970009C630F /* AppDelegate.swift */; };
 		B5264E731F02D970009C630F /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5264E721F02D970009C630F /* CaptureViewController.swift */; };
 		B5264E781F02D970009C630F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5264E771F02D970009C630F /* Assets.xcassets */; };
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				675E51672652C280007B051E /* LapseCameraEffectPackage in Frameworks */,
+				67417B24265697F8002BAD5F /* LapseCameraEffectPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			);
 			name = RectCapture;
 			packageProductDependencies = (
-				675E51662652C280007B051E /* LapseCameraEffectPackage */,
+				67417B23265697F8002BAD5F /* LapseCameraEffectPackage */,
 			);
 			productName = RectCapture;
 			productReference = B5264E6D1F02D970009C630F /* RectCapture.app */;
@@ -129,7 +129,7 @@
 			);
 			mainGroup = B5264E641F02D970009C630F;
 			packageReferences = (
-				675E51652652C280007B051E /* XCRemoteSwiftPackageReference "lapsecameraeffectpackage" */,
+				67417B22265697F8002BAD5F /* XCRemoteSwiftPackageReference "lapsecameraeffectpackage" */,
 			);
 			productRefGroup = B5264E6E1F02D970009C630F /* Products */;
 			projectDirPath = "";
@@ -340,7 +340,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		675E51652652C280007B051E /* XCRemoteSwiftPackageReference "lapsecameraeffectpackage" */ = {
+		67417B22265697F8002BAD5F /* XCRemoteSwiftPackageReference "lapsecameraeffectpackage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nthstate/lapsecameraeffectpackage";
 			requirement = {
@@ -351,9 +351,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		675E51662652C280007B051E /* LapseCameraEffectPackage */ = {
+		67417B23265697F8002BAD5F /* LapseCameraEffectPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 675E51652652C280007B051E /* XCRemoteSwiftPackageReference "lapsecameraeffectpackage" */;
+			package = 67417B22265697F8002BAD5F /* XCRemoteSwiftPackageReference "lapsecameraeffectpackage" */;
 			productName = LapseCameraEffectPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
