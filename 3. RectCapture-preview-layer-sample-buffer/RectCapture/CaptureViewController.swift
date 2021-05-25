@@ -181,7 +181,7 @@ extension CaptureViewController : AVCaptureVideoDataOutputSampleBufferDelegate {
        outputRetainedBufferCountHint is the number of pixel buffers the renderer retains. This value informs the renderer
        how to size its buffer pool and how many pixel buffers to preallocate. Allow 3 frames of latency to cover the dispatch_async call.
        */
-      cameraEffect.prepare(with: formatDescription, outputRetainedBufferCountHint: 3)
+      cameraEffect.prepare(with: formatDescription, outputRetainedBufferCountHint: 1)
     }
     
     display(sample: sampleBuffer)

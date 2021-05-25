@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		67417B24265697F8002BAD5F /* LapseCameraEffectPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 67417B23265697F8002BAD5F /* LapseCameraEffectPackage */; };
+		675A1064265CEF4500CE7F18 /* Comparable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A1063265CEF4500CE7F18 /* Comparable+Extensions.swift */; };
 		675E51592652B791007B051E /* CameraEffectAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E51582652B791007B051E /* CameraEffectAnimator.swift */; };
 		675E51642652BF82007B051E /* SampleBufferDisplayview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E51632652BF82007B051E /* SampleBufferDisplayview.swift */; };
 		B5264E711F02D970009C630F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5264E701F02D970009C630F /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		675A1063265CEF4500CE7F18 /* Comparable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Extensions.swift"; sourceTree = "<group>"; };
 		675E51582652B791007B051E /* CameraEffectAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraEffectAnimator.swift; sourceTree = "<group>"; };
 		675E515B2652B99A007B051E /* LapseCameraEffect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LapseCameraEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		675E51632652BF82007B051E /* SampleBufferDisplayview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBufferDisplayview.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				B5264E701F02D970009C630F /* AppDelegate.swift */,
 				B5264E721F02D970009C630F /* CaptureViewController.swift */,
 				675E51582652B791007B051E /* CameraEffectAnimator.swift */,
+				675A1063265CEF4500CE7F18 /* Comparable+Extensions.swift */,
 				B5264E771F02D970009C630F /* Assets.xcassets */,
 				B5264E791F02D970009C630F /* LaunchScreen.storyboard */,
 				B5264E7C1F02D970009C630F /* Info.plist */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675A1064265CEF4500CE7F18 /* Comparable+Extensions.swift in Sources */,
 				B5264E731F02D970009C630F /* CaptureViewController.swift in Sources */,
 				675E51642652BF82007B051E /* SampleBufferDisplayview.swift in Sources */,
 				B5264E711F02D970009C630F /* AppDelegate.swift in Sources */,

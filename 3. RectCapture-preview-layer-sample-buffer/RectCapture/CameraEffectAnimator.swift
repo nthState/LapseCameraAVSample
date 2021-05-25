@@ -69,7 +69,7 @@ extension CameraEffectAnimator {
     
     //os_log("%{PUBLIC}@", log: OSLog.general, type: .debug, "Blur time: \(t) value: \(percent), interval: \(interval)")
     
-    return percent * blurMax
+    return (percent * blurMax).clamped(to: 0...blurMax)
   }
   
   private func getDistortion(interval: TimeInterval) -> Float {
@@ -82,7 +82,7 @@ extension CameraEffectAnimator {
     
     let percent = easeOutCirc(x: t)
     
-    return percent * aberration
+    return (percent * aberration)
   }
   
   private func getAberration(interval: TimeInterval) -> (Int, Int, Int) {
@@ -95,7 +95,9 @@ extension CameraEffectAnimator {
     
     let percent = easeOutCirc(x: t)
     
-    return (Int(red * percent), Int(green * percent), Int(blue * percent))
+    return (Int(red * percent).clamped(to: 0...Int(red)),
+            Int(green * percent).clamped(to: 0...Int(green)),
+            Int(blue * percent).clamped(to: 0...Int(blue)))
   }
   
 }
